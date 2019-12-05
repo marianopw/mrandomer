@@ -5,12 +5,11 @@ Midi randomer - with sysex support too
 ## Installation
 You need Rust installed in order to compile this project.
 
-- [Download Rust Lang from](https://www.rust-lang.org/tools/install)
-- Clone repo
-- cd to repo folder
+- Download Rust Lang [from here](https://www.rust-lang.org/tools/install)
+- Clone repo `git clone https://github.com/marianopw/mrandomer.git`
+- cd to repo folder `cd mrandomer`
 - run `cargo build --release` 
-- go to created folder ./target/release and you'll find mrandomer executable.
-
+- go to created folder ./target/release and you'll find mrandomer compiled.
 
 ## Usage
 ./mrandomer -s yourmapping.toml
