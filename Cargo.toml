@@ -1,0 +1,17 @@
+[package]
+name = "mrandomer"
+version = "0.1.0"
+authors = ["mpw <im@mariano.pw>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+toml = "0.5.3"
+serde_derive = "1.0.101"
+serde = "1.0.101"
+clap = "2.33.0"
+rand = "0.7.2"
+hex = "0.4.0"
+[dependencies.midir]
+path = "lib/midir"

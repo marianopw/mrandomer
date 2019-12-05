@@ -1,0 +1,80 @@
+synth = "Nord Drum"
+patch = "random shit"
+channel = 5
+infiniteloop = false
+#number of repetitions | 0 will run only once
+repeat = 50
+#msg delay is in milliseconds
+msgdelay = 150
+[[cc]]
+#name is optional
+name = "click level"
+number = 56
+#minnumber = 0
+#maxnumber = 0
+#if value is set, minvalue and maxvalue wont do anything.
+#Remove it or comment it if you want to randomize the value
+#value = 10
+minvalue = 3
+maxvalue = 100
+[[cc]]
+name = "Tone Wave"
+number = 46
+#value = 120
+minvalue = 20
+maxvalue = 90
+[[cc]]
+name = "Tone Timbre"
+number = 51
+#value = 0
+minvalue = 3
+maxvalue = 30
+[[cc]]
+name = "Tone Spectra"
+number = 30
+#value = 0
+minvalue = 0
+maxvalue = 127
+#note duration 0-4 fixed | duration 5 is random | if set in random duration, remove # from minduration and maxduration
+[[note]]
+#note 60 is middle C
+#number = 60
+minnumber = 60
+maxnumber = 80
+#velocity = 127
+minvelocity = 60
+maxvelocity = 127
+duration = 400
+#minduration = 0
+#maxduration = 4
+pause = 400
+[[note]]
+#note 60 is middle C
+#number = 60
+minnumber = 60
+maxnumber = 65
+#velocity = 127
+minvelocity = 60
+maxvelocity = 127
+duration = 40
+#minduration = 0
+#maxduration = 4
+pause = 40
+[[note]]
+#note 60 is middle C
+#number = 60
+minnumber = 0
+maxnumber = 50
+#velocity = 127
+minvelocity = 60
+maxvelocity = 127
+duration = 200
+#minduration = 0
+#maxduration = 4
+pause = 200
+[[sysex]]
+name = "cutoff"
+message = [ 0xF0, 0x1, 0x22, 0x40, 0x15, 0xF9 ]
+valuebit = 4
+minvalue = 0
+maxvalue = 150

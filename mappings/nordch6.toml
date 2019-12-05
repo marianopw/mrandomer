@@ -1,0 +1,226 @@
+synth = "Nord Drum"
+patch = "random"
+channel = 7
+infiniteloop = true
+repeat = 500
+msgdelay = 0
+[[cc]]
+number = 0
+name = "Bank Select MSB"
+#minvalue = 1
+#maxvalue = 30
+
+[[cc]]
+number = 32
+name = "Bank Select LSB"
+#minvalue = 2
+#maxvalue = 85
+
+[[cc]]
+number = 7
+name = "Level"
+
+[[cc]]
+number = 10
+name = "Pan"
+
+[[cc]]
+number = 14
+name = "Noise Filter Frequency"
+minvalue = 50
+maxvalue = 127
+
+[[cc]]
+number = 15
+name = "Noise Filter Type"
+
+[[cc]]
+number = 16
+name = "Noise Filter Envelope"
+
+[[cc]]
+number = 17
+name = "Noise Filter Resonance"
+
+[[cc]]
+number = 18
+name = "Noise Attack/Rate"
+
+[[cc]]
+number = 19
+name = "Noise Atk Mode"
+
+[[cc]]
+number = 20
+name = "Noise Decay Type (E, L, G)"
+minvalue = 0
+maxvalue = 10
+
+[[cc]]
+number = 21
+name = "Noise Decay"
+minvalue = 0
+maxvalue = 0
+[[cc]]
+number = 22
+name = "Noise Decay Lo"
+
+[[cc]]
+number = 23
+name = "Dist Amount"
+
+[[cc]]
+number = 24
+name = "Dist Type"
+
+[[cc]]
+number = 25
+name = "EQ Frequency"
+
+[[cc]]
+number = 26
+name = "EQ Gain"
+
+[[cc]]
+number = 27
+name = "Echo Feedback"
+
+[[cc]]
+number = 28
+name = "Echo Amount"
+
+[[cc]]
+number = 29
+name = "Echo BPM MSB"
+
+[[cc]]
+number = 30
+name = "Tone Spectra"
+#minvalue = 5
+#maxvalue = 90
+
+[[cc]]
+number = 31
+name = "Tone Pitch MSB"
+
+[[cc]]
+number = 49
+name = "Tone Decay Type (L, E)"
+minvalue = 50
+maxvalue = 100
+
+[[cc]]
+number = 50
+name = "Tone Decay"
+minvalue = 50
+maxvalue = 100
+
+[[cc]]
+number = 51
+name = "Tone Dec Lo"
+
+[[cc]]
+number = 52
+name = "Tone Timbre"
+
+[[cc]]
+number = 53
+name = "Tone Timb Envelope"
+[[cc]]
+number = 54
+name = "Tone Bend Amount"
+
+[[cc]]
+number = 55
+name = "Tone Bend Time"
+minvalue = 50
+maxvalue = 100
+
+[[cc]]
+number = 56
+name = "Click Level"
+
+[[cc]]
+number = 57
+name = "Click Type"
+
+[[cc]]
+number = 58
+name = "Mix Balance"
+
+[[cc]]
+number = 59
+name = "Mute Group"
+
+[[cc]]
+number = 61
+name = "Echo BPM LSB"
+
+[[cc]]
+number = 63
+name = "Tone Pitch LSB"
+
+[[cc]]
+number = 70
+name = "Channel Focus"
+
+[[note]]
+#note 60 is middle C
+#number = 60
+minnumber = 62
+maxnumber = 65
+#velocity = 127
+minvelocity = 20
+maxvelocity = 60
+duration = 200
+#minduration = 0
+#maxduration = 4
+#pause = 10
+[[note]]
+#note 60 is middle C
+#number = 60
+minnumber = 60
+maxnumber = 65
+#velocity = 127
+minvelocity = 60
+maxvelocity = 127
+duration = 800
+#minduration = 0
+#maxduration = 4
+#pause = 100
+[[note]]
+#note 60 is middle C
+#number = 60
+minnumber = 60
+maxnumber = 65
+#velocity = 127
+minvelocity = 60
+maxvelocity = 127
+duration = 420
+#minduration = 0
+#maxduration = 4
+pause = 100
+[[note]]
+#note 60 is middle C
+#number = 60
+minnumber = 40
+maxnumber = 120
+#velocity = 127
+minvelocity = 60
+maxvelocity = 127
+duration = 200
+#minduration = 0
+#maxduration = 4
+pause = 2
+[[note]]
+#note 60 is middle C
+number = 60
+#minnumber = 0
+#maxnumber = 50
+#velocity = 127
+minvelocity = 60
+maxvelocity = 127
+duration = 200
+#minduration = 0
+#maxduration = 4
+pause = 2

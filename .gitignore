@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+macbuild.sh
+start.sh
+mrandomer
+runall.sh

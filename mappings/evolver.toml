@@ -1,0 +1,210 @@
+name = "EVOLVER"
+patch = "test"
+channel = 1
+infiniteloop = true
+repeat = 500
+msgdelay = 20
+#only uncomment if you want to send sysex messages
+sysex_manufacturer_id = 0x1
+sysex_device_id = 0x20
+[[note]]
+#number = 61
+minnumber = 80
+maxnumber = 95
+velocity = 127
+
+[[note]]
+#number = 61
+minnumber = 80
+maxnumber = 95
+velocity = 127
+
+[[note]]
+#number = 61
+minnumber = 80
+maxnumber = 95
+velocity = 127
+
+[[note]]
+#number = 61
+minnumber = 80
+maxnumber = 95
+velocity = 127
+#minvelocity = 20
+#maxvelocity = 60
+duration = 10
+#minduration = 0
+#maxduration = 4
+[[note]]
+#number = 61
+minnumber = 50
+maxnumber = 52
+velocity = 127
+#minvelocity = 20
+#maxvelocity = 60
+duration = 38
+#minduration = 0
+#maxduration = 4
+[[sysex]]
+name = "just random"
+#add the desired sysex messages without START and END announcement part.
+#Start and end messages are added in the program to make this file less verbose
+#0xF0 is the start part and 0xF7 is the end part.
+
+#you can send up to 3 random values through sysex
+#in your message, assign value r1 for r1random value, 252 r2 for r2random random value and r3 for r3random random value.
+#Also, hex values must be inside double quotes
+r1minvalue = 0
+r1maxvalue = 50
+r2minvalue = 1
+r2maxvalue = 50
+r3minvalue = 90
+r3maxvalue = 100
+message = [ "0x1", "0x1", "r1", "r2", "r3"]
+[[sysex]]
+message = [ "0x1", "0x1", "0x27", "0", "0" ]
+[[sysex]]
+message = [ "0x1", "0x1", "0x36", "4", "0" ]
+
+[[cc]]
+number = 12
+name = "DISTORTN"
+value = 0
+[[cc]]
+number = 13
+name = "HPF FREQ"
+
+[[cc]]
+number = 20
+name = "OSC1FREQ"
+
+[[cc]]
+number = 21
+name = "OSC2FREQ"
+
+[[cc]]
+number = 22
+name = "OSC3FREQ"
+
+[[cc]]
+number = 23
+name = "OSC4FREQ"
+
+[[cc]]
+number = 24
+name = "OSC1 LVL"
+
+[[cc]]
+number = 25
+name = "OSC2 LVL"
+
+[[cc]]
+number = 26
+name = "OSC3 LVL"
+[[cc]]
+number = 27
+name = "OSC4 LVL"
+[[cc]]
+number = 28
+name = "OSC1 SHP"
+[[cc]]
+number = 29
+name = "OSC2 SHP"
+[[cc]]
+number = 30
+name = "OSC3 SHP"
+[[cc]]
+number = 31
+name = "OSC4 SHP"
+[[cc]]
+number = 40
+name = "FM 4->3"
+[[cc]]
+number = 41
+name = "FM 3->4"
+[[cc]]
+number = 42
+name = "RM 4->3"
+[[cc]]
+number = 43
+name = "RM 3->4"
+[[cc]]
+number = 52
+name = "FLT FREQ"
+[[cc]]
+number = 53
+name = "FLT RESO"
+[[cc]]
+number = 54
+name = "FLT ENVA"
+[[cc]]
+number = 55
+name = "FLT ATTK"
+[[cc]]
+number = 56
+name = "FLT DCAY"
+[[cc]]
+number = 57
+name = "FLT SUS"
+[[cc]]
+number = 58
+name = "FLT REL"
+[[cc]]
+number = 59
+name = "FLT AMOD"
+[[cc]]
+number = 60
+name = "FLT SPLT"
+[[cc]]
+number = 61
+name = "FLT KEYA"
+[[cc]]
+number = 62
+name = "NOIZ LVL"
+[[cc]]
+number = 75
+name = "AMP ATTK"
+[[cc]]
+number = 76
+name = "AMP DCAY"
+[[cc]]
+number = 77
+name = "AMP SUS"
+[[cc]]
+number = 78
+name = "AMP REL"
+[[cc]]
+number = 85
+name = "FDB FREQ"
+[[cc]]
+number = 86
+name = "FDB LVL"
+[[cc]]
+number = 102
+name = "DLY1 TIM"
+[[cc]]
+number = 103
+name = "DLY2 TIM"
+[[cc]]
+number = 104
+name = "DLY3 TIM"
+[[cc]]
+number = 105
+name = "DLY1 AMT"
+value = 0
+[[cc]]
+number = 106
+name = "DLY2 AMT"
+value = 0
+
+[[cc]]
+number = 107
+name = "DLY3 AMT"
+value = 0
+[[cc]]
+number = 108
+name = "DLY FDB1"
+
+[[cc]]
+number = 109
+name = "DLY FDB2"
